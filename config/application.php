@@ -72,11 +72,11 @@ return array(
 	'GzipCompressOutput'   => false,                    // Whether or not to compress output using zlib.
 	'GzipCompressionLevel' => 9,                        // zlib compression level. (1~9)
 	'OutputCleanHTML'      => false,                     // Use this if you have Tidy installed to clean your HTML output when serving pages.
-	'ShowCopyright'        => true,                     // Whether or not to show the copyright footer.
-	'ShowRenderDetails'    => true,                     // Shows the "page rendered in X seconds" and "number of queries executed: X" in the default theme.
+	'ShowCopyright'        => false,                     // Whether or not to show the copyright footer.
+	'ShowRenderDetails'    => false,                     // Shows the "page rendered in X seconds" and "number of queries executed: X" in the default theme.
 	'UseCleanUrls'         => false,                    // Set to true if you're running Apache and it supports mod_rewrite and .htaccess files.
 	'DebugMode'            => false,                    // Set to false to minimize technical details from being output by Flux. WARNING: DO NOT USE THIS OPTION ON A PUBLICALLY-ACCESSIBLE CP.
-	'UseCaptcha'           => true,                     // Use CAPTCHA image for account registration to prevent automated account creations. (Requires GD2/FreeType2)
+	'UseCaptcha'           => false,                     // Use CAPTCHA image for account registration to prevent automated account creations. (Requires GD2/FreeType2)
 	'UseLoginCaptcha'      => false,                    // Use CAPTCHA image for account logins. (Requires GD2/FreeType2)
 	'EnableReCaptcha'      => false,                    // Enables the use of reCAPTCHA instead of Flux's native GD2 library (http://www.google.com/recaptcha)
 	'ReCaptchaPublicKey'   => '...',                    // This is your reCAPTCHA public key [REQUIRED FOR RECAPTCHA] (sign up at http://www.google.com/recaptcha)
@@ -93,7 +93,7 @@ return array(
 	'MoneyDecimalPlaces'   => 2,                        // (Visual) Number of decimal places to display in amount.
 	'MoneyThousandsSymbol' => ',',                      // (Visual) Thousandths place separator (a period in European currencies).
 	'MoneyDecimalSymbol'   => '.',                      // (Visual) Decimal separator (a comma in European currencies).
-	'AcceptDonations'      => true,                     // Whether or not to accept donations.
+	'AcceptDonations'      => false,                     // Whether or not to accept donations.
 	'PayPalIpnUrl'         => 'www.sandbox.paypal.com', // The URL for PayPal's IPN responses (www.paypal.com for live and www.sandbox.paypal.com for testing)
 	'PayPalBusinessEmail'  => 'admin@localhost',        // Enter the e-mail under which you have registered your business account.
 	'PayPalReceiverEmails' => array(                    // These are the receiver e-mail addresses who are allowed to receive payment.
