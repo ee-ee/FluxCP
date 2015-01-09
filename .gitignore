@@ -17,3 +17,4 @@ __MACOSX
 
 /data/tmp/*.php
 /data/tmp/*.cache
+/data/tmp/emblems
