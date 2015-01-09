@@ -196,31 +196,31 @@ return array(
 		//	'Home'          => array('module' => 'main'),
 			//'Forums'        => array('exturl' => 'http://www.fluxro.com/community'),
 		//),
-		'Account'     => array(
-			'Register'      => array('module' => 'account', 'action' => 'create'),
-			'Login'         => array('module' => 'account', 'action' => 'login'),
-			'My Account'    => array('module' => 'account', 'action' => 'view'),
-			'History'       => array('module' => 'history'),
-			'Logout'        => array('module' => 'account', 'action' => 'logout'),
+		'Conta'     => array(
+			'Registrar'      => array('module' => 'account', 'action' => 'create'),
+			'Entrar'         => array('module' => 'account', 'action' => 'login'),
+			'Minha Conta'    => array('module' => 'account', 'action' => 'view'),
+			'Histórico'       => array('module' => 'history'),
+			'Sair'        => array('module' => 'account', 'action' => 'logout'),
 		),
-		'Donations'   => array(
-			'Donate'        => array('module' => 'donate'),
-			'Purchase'      => array('module' => 'purchase'),
+		'Doações'   => array(
+			'Doar'        => array('module' => 'donate'),
+			'Comprar'      => array('module' => 'purchase'),
 		),
-		'Information' => array(
-			'Server Info'   => array('module' => 'server', 'action' => 'info'),
-			'Server Status' => array('module' => 'server', 'action' => 'status'),
-			'WoE Hours'     => array('module' => 'woe'),
-			'Castles'       => array('module' => 'castle'),
-			"Who's Online"  => array('module' => 'character', 'action' => 'online'),
-			'Map Statistics'=> array('module' => 'character', 'action' => 'mapstats'),
-			'Ranking Info'  => array('module' => 'ranking', 'action' => 'character'),
+		'Informações' => array(
+			'Informações'   => array('module' => 'server', 'action' => 'info'),
+			'Status' => array('module' => 'server', 'action' => 'status'),
+			'Horários de WoE'     => array('module' => 'woe'),
+			'Castelos'       => array('module' => 'castle'),
+			'Quem Está Online  => array('module' => 'character', 'action' => 'online'),
+			'Estatísticas de Mapa'=> array('module' => 'character', 'action' => 'mapstats'),
+			'Ranking'  => array('module' => 'ranking', 'action' => 'character'),
 		),
 		'Database'    => array(
-			'Item Database' => array('module' => 'item'),
-			'Mob Database'  => array('module' => 'monster'),
+			'Database de Itens' => array('module' => 'item'),
+			'Database de Monstros'  => array('module' => 'monster'),
 		),
-		'Misc. Stuff' => array(
+		'Outras Coisas' => array(
 			'Hercules Logs' => array('module' => 'logdata'),
 			'CP Logs'       => array('module' => 'cplog'),
 			'IP Ban List'   => array('module' => 'ipban'),
