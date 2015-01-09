@@ -203,10 +203,10 @@ return array(
 			'Histórico'       => array('module' => 'history'),
 			'Sair'        => array('module' => 'account', 'action' => 'logout'),
 		),
-		'Doações'   => array(
-			'Doar'        => array('module' => 'donate'),
-			'Comprar'      => array('module' => 'purchase'),
-		),
+		//'Doações'   => array(
+			//'Doar'        => array('module' => 'donate'),
+			//'Comprar'      => array('module' => 'purchase'),
+		//),
 		'Informações' => array(
 			'Informações'   => array('module' => 'server', 'action' => 'info'),
 			'Status' => array('module' => 'server', 'action' => 'status'),
