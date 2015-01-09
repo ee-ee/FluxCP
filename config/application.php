@@ -238,40 +238,40 @@ return array(
 	// particular module. The format it simple.
 	'SubMenuItems' => array(
 		'history' => array(
-			'gamelogin'  => 'Game Logins',
-			'cplogin'    => 'CP Logins',
-			'emailchange'=> 'E-Mail Changes',
-			'passchange' => 'Password Changes',
-			'passreset'  => 'Password Resets'
+			'gamelogin'  => 'Logins no Jogo',
+			'cplogin'    => 'Logins no Painel',
+			'emailchange'=> 'Alterações de E-mail',
+			'passchange' => 'Alterações de Senha',
+			'passreset'  => 'Resets de Senha'
 		),
 		'account' => array(
-			'index'      => 'List Accounts',
-			'view'       => 'View Account',
-			'changepass' => 'Change Password',
-			'changemail' => 'Change E-mail',
-			'changesex'  => 'Change Gender',
-			'transfer'   => 'Transfer Credits',
-			'xferlog'    => 'Credit Transfer History',
-			'cart'       => 'Go to Shopping Cart',
-			'login'      => 'Login',
-			'create'     => 'Register',
-			'resetpass'  => 'Reset Password',
-			'resend'     => 'Resend E-mail Confirmation'
+			'index'      => 'Listar Contas',
+			'view'       => 'Ver Conta',
+			'changepass' => 'Alterar Senha',
+			'changemail' => 'Alterar E-mail',
+			'changesex'  => 'Alterar Sexo',
+			'transfer'   => 'Transferir Créditos',
+			'xferlog'    => 'Histórico de Transferência de Créditos',
+			'cart'       => 'Ir para Carrinho de Compras',
+			'login'      => 'Entrar',
+			'create'     => 'Registrar',
+			'resetpass'  => 'Resetar Senha',
+			'resend'     => 'Reenviar E-mail de Confirmação'
 		),
 		'guild' => array(
-			'index'  => 'List Guilds',
-			'export' => 'Export Guild Emblems'
+			'index'  => 'Listar Guilds',
+			'export' => 'Exportar Emblemas de Guild'
 		),
 		'server' => array(
-			'status'     => 'View Status',
-			'status-xml' => 'View Status as XML'
+			'status'     => 'Ver Status',
+			'status-xml' => 'Ver Status em XML'
 		),
 		'logdata' => array(
 			//'char'    => 'Characters',
 			//'inter'   => 'Interactions',
-			'command' => 'Commands',
+			'command' => 'Comandos',
 			//'branch'  => 'Branches',
-			'chat'    => 'Chat Messages',
+			'chat'    => 'Mensagens de Chat',
 			'login'   => 'Logins',
 			//'mvp'     => 'MVP',
 			//'npc'     => 'NPC',
@@ -279,13 +279,13 @@ return array(
 			'zeny'    => 'Zeny'
 		),
 		'cplog' => array(
-			'paypal'     => 'PayPal Transactions',
+			'paypal'     => 'Transações PayPal',
 			'login'      => 'Logins',
-			'resetpass'  => 'Password Resets',
-			'changepass' => 'Password Changes',
-			'changemail' => 'E-mail Changes',
-			'ban'        => 'Account Bans',
-			'ipban'      => 'IP Bans'
+			'resetpass'  => 'Resets de Senha',
+			'changepass' => 'Alterações de Senha',
+			'changemail' => 'Alterações de E-mail',
+			'ban'        => 'Bans de Conta',
+			'ipban'      => 'Bans de IP'
 		),
 		'purchase' => array(
 			'index'    => 'Shop',
