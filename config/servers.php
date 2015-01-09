@@ -4,7 +4,7 @@ return array(
 	// specify multiple server groups (however they should share the same login
 	// server whilst they are allowed to have multiple char/map pairs).
 	array(
-		'ServerName'     => 'FluxRO',
+		'ServerName'     => 'cancRO',
 		// Global database configuration (excludes logs database configuration).
 		'DbConfig'       => array(
 			//'Socket'     => '/tmp/mysql.sock',
@@ -18,7 +18,7 @@ return array(
 			'Password'   => 'ragnarok',
 			'Database'   => 'ragnarok',
 			'Persistent' => true,
-			'Timezone'   => null // Example: '+0:00' is UTC.
+			'Timezone'   => 'BRT' // Example: '+0:00' is UTC.
 			// The possible values of 'Timezone' is as documented from the MySQL website:
 			// "The value can be given as a string indicating an offset from UTC, such as '+10:00' or '-6:00'."
 			// "The value can be given as a named time zone, such as 'Europe/Helsinki', 'US/Eastern', or 'MET'." (see below continuation!)
@@ -39,7 +39,7 @@ return array(
 			'Password'   => 'ragnarok',
 			'Database'   => 'ragnarok',
 			'Persistent' => true,
-			'Timezone'   => null // Possible values is as described in the comment in DbConfig.
+			'Timezone'   => 'BRT' // Possible values is as described in the comment in DbConfig.
 		),
 		// Login server configuration.
 		'LoginServer'    => array(
@@ -52,22 +52,22 @@ return array(
 		),
 		'CharMapServers' => array(
 			array(
-				'ServerName'      => 'FluxRO',
-				'Renewal'         => true,
+				'ServerName'      => 'cancRO',
+				'Renewal'         => false,
 				'MaxCharSlots'    => 9,
-				'DateTimezone'    => null, // Specifies game server's timezone for this char/map pair. (See: http://php.net/timezones)
+				'DateTimezone'    => 'America/Sao_Paulo', // Specifies game server's timezone for this char/map pair. (See: http://php.net/timezones)
 				//'ResetDenyMaps'   => 'sec_pri', // Defaults to 'sec_pri'. This value can be an array of map names.
 				//'Database'        => 'ragnarok', // Defaults to DbConfig.Database
-				'MaxBaseLevel'    => 150,
+				'MaxBaseLevel'    => 99,
 				'ExpRates' => array(
-					'Base'        => 100, // Rate at which (base) exp is given
-					'Job'         => 100, // Rate at which job exp is given
-					'Mvp'         => 100  // MVP bonus exp rate
+					'Base'        => 50, // Rate at which (base) exp is given
+					'Job'         => 35, // Rate at which job exp is given
+					'Mvp'         => 35  // MVP bonus exp rate
 				),
 				'DropRates' => array(
 					// The rate the common items (in the ETC tab, besides card) are dropped
-					'Common'      => 100,
-					'CommonBoss'  => 100,
+					'Common'      => 35,
+					'CommonBoss'  => 35,
 					// The rate healing items (that restore HP or SP) are dropped
 					'Heal'        => 100,
 					'HealBoss'    => 100,
