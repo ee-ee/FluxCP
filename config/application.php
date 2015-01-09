@@ -212,7 +212,7 @@ return array(
 			'Status' => array('module' => 'server', 'action' => 'status'),
 			'Horários de WoE'     => array('module' => 'woe'),
 			'Castelos'       => array('module' => 'castle'),
-			'Quem Está Online  => array('module' => 'character', 'action' => 'online'),
+			'Quem Está Online'  => array('module' => 'character', 'action' => 'online'),
 			'Estatísticas de Mapa'=> array('module' => 'character', 'action' => 'mapstats'),
 			'Ranking'  => array('module' => 'ranking', 'action' => 'character'),
 		),
