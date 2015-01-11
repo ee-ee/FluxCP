@@ -1,6 +1,6 @@
 <?php if (!defined('FLUX_ROOT')) exit; ?>
 <h2>Bem vindo ao cancRO!</h2>
-<p>Nossas rates: 50/50/30.</p>
+<p>Nossas rates: 50/35/35.</p>
 <h3>Instruções para jogar</h3>
 <ol>
 <li>Instale o cliente do bRO:<br>
