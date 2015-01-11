@@ -15,7 +15,7 @@
 		<?php endif ?>
 		<!--[if IE]>
 		<link rel="stylesheet" href="<?php echo $this->themePath('css/flux/ie.css') ?>" type="text/css" media="screen" title="" charset="utf-8" />
-		<![endif]-->
+		<![endif]-->	
 		<!--[if lt IE 9]>
 		<script src="<?php echo $this->themePath('js/ie9.js') ?>" type="text/javascript"></script>
 		<script type="text/javascript" src="<?php echo $this->themePath('js/flux.unitpngfix.js') ?>"></script>
@@ -64,16 +64,16 @@
 					else
 						$('.money-input').val(moneyValue.toFixed(2));
 				}).keyup();
-
+				
 				// In: js/flux.datefields.js
 				processDateFields();
 			});
-
+			
 			function reload(){
 				window.location.href = '<?php echo $this->url ?>';
 			}
 		</script>
-
+		
 		<script type="text/javascript">
 			function updatePreferredServer(sel){
 				var preferred = sel.options[sel.selectedIndex].value;
@@ -88,15 +88,15 @@
 			// Preload spinner image.
 			var spinner = new Image();
 			spinner.src = '<?php echo $this->themePath('img/spinner.gif') ?>';
-
+			
 			function refreshSecurityCode(imgSelector){
 				$(imgSelector).attr('src', spinner.src);
-
+				
 				// Load image, spinner will be active until loading is complete.
 				var clean = <?php echo Flux::config('UseCleanUrls') ? 'true' : 'false' ?>;
 				var image = new Image();
 				image.src = "<?php echo $this->url('captcha') ?>"+(clean ? '?nocache=' : '&nocache=')+Math.random();
-
+				
 				$(imgSelector).attr('src', image.src);
 			}
 			function toggleSearchForm()
@@ -105,7 +105,7 @@
 				$('.search-form').slideToggle('fast');
 			}
 		</script>
-
+		
 		<?php if (Flux::config('EnableReCaptcha') && Flux::config('ReCaptchaTheme')): ?>
 		<script type="text/javascript">
 			 var RecaptchaOptions = {
@@ -113,19 +113,19 @@
 			 };
 		</script>
 		<?php endif ?>
-
+		
 	</head>
 	<body>
 		<table cellspacing="0" cellpadding="0" width="100%">
 			<tr>
 				<!-- Header -->
-				<td bgcolor="#d5f0ff" width="20"></td>
-				<td bgcolor="#d5f0ff" colspan="3">
+				<td bgcolor="#8ebceb" width="20"></td>
+				<td bgcolor="#8ebceb" colspan="3">
 					<a href="<?php echo $this->basePath ?>">
 						<img src="<?php echo $this->themePath($session->account->group_level >= Flux::config('AdminMenuGroupLevel') ? 'img/logo_admin.gif' : 'img/logo.png') ?>" id="logo" />
 					</a>
 				</td>
-				<td bgcolor="#d5f0ff" width="20"></td>
+				<td bgcolor="#8ebceb" width="20"></td>
 			</tr>
 			<tr>
 				<!-- Spacing between header and content -->
@@ -142,7 +142,7 @@
 				<td width="100%">
 					<!-- Login box / User information -->
 					<?php include $this->themePath('main/loginbox.php', true) ?>
-
+					
 					<!-- Content -->
 					<table cellspacing="0" cellpadding="0" width="100%" id="content">
 						<tr>
@@ -150,24 +150,24 @@
 							<td bgcolor="#f5f5f5"></td>
 							<td width="18"><img src="<?php echo $this->themePath('img/content_tr.gif') ?>" style="display: block" /></td>
 						</tr>
-
+						
 						<tr>
 							<td bgcolor="#f5f5f5"></td>
 							<td bgcolor="#f5f5f5">
 								<?php if (Flux::config('DebugMode') && @gethostbyname(Flux::config('ServerAddress')) == '127.0.0.1'): ?>
 									<p class="notice">Please change your <strong>ServerAddress</strong> directive in your application config to your server's real address (e.g., myserver.com).</p>
 								<?php endif ?>
-
+								
 								<!-- Messages -->
 								<?php if ($message=$session->getMessage()): ?>
 									<p class="message"><?php echo htmlspecialchars($message) ?></p>
 								<?php endif ?>
-
+								
 								<!-- Sub menu -->
 								<?php include $this->themePath('main/submenu.php', true) ?>
-
+								
 								<!-- Page menu -->
 								<?php include $this->themePath('main/pagemenu.php', true) ?>
-
+								
 								<!-- Credit balance -->
 								<?php if (in_array($params->get('module'), array('donate', 'purchase'))) include $this->themePath('main/balance.php', true) ?>
