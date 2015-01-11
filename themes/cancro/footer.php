@@ -18,8 +18,7 @@
 				<td colspan="3"></td>
 				<td id="copyright">
 					<p>
-						<strong>Powered by <a href="https://github.com/HerculesWS/FluxCP">FluxCP</a> and <a href="https://github.com/HerculesWS/Hercules">Hercules</a>.</strong>
-						&mdash;  Version <?php echo htmlspecialchars(Flux::VERSION) ?> &#64;<?php echo Flux::REPOSVERSION ? Flux::REPOSVERSION : '' ?>
+            <strong>Copyright cancRO 2015 · #cancRO @ irc.rizon.net</strong>
 					</p>
 				</td>
 				<td></td>
@@ -38,8 +37,8 @@
 				<td></td>
 			</tr>
 			<?php endif ?>
-			
-			
+
+
 			<?php if (count(Flux::$appConfig->get('ThemeName', false)) > 1): ?>
 			<tr>
 				<td colspan="3"></td>
@@ -51,7 +50,7 @@
 						<?php endforeach ?>
 					</select>
 					</span>
-					
+
 					<form action="<?php echo $this->urlWithQs ?>" method="post" name="preferred_theme_form" style="display: none">
 					<input type="hidden" name="preferred_theme" value="" />
 					</form>
