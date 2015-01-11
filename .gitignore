@@ -18,3 +18,8 @@ __MACOSX
 /data/tmp/*.php
 /data/tmp/*.cache
 /data/tmp/emblems
+
+themes/cancro/*.DS_Store
+themes/cancro/css/*
+themes/cancro/bower_components/*
+themes/cancro/node_modules/*
